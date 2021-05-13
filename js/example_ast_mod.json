@@ -1,0 +1,114 @@
+{
+    "type": "Program",
+    "body": {
+        "body0": {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "add"
+                    },
+                    "init": {
+                        "type": "ArrowFunctionExpression",
+                        "id": null,
+                        "expression": false,
+                        "generator": false,
+                        "async": false,
+                        "params": [
+                            {
+                                "type": "Identifier",
+                                "name": "num1"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "num2"
+                            }
+                        ],
+                        "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ReturnStatement",
+                                    "argument": {
+                                        "type": "BinaryExpression",
+                                        "left": {
+                                            "type": "Identifier",
+                                            "name": "num1"
+                                        },
+                                        "operator": "+",
+                                        "right": {
+                                            "type": "Identifier",
+                                            "name": "num2"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        "body1": {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "result"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "add"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": 1,
+                                "raw": "1"
+                            },
+                            {
+                                "type": "Literal",
+                                "value": 2,
+                                "raw": "2"
+                            }
+                        ],
+                        "optional": false
+                    }
+                }
+            ],
+            "kind": "const"
+        },
+        "body2": {
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "object": {
+                        "type": "Identifier",
+                        "name": "console"
+                    },
+                    "property": {
+                        "type": "Identifier",
+                        "name": "log"
+                    },
+                    "computed": false,
+                    "optional": false
+                },
+                "arguments": [
+                    {
+                        "type": "Identifier",
+                        "name": "result"
+                    }
+                ],
+                "optional": false
+            }
+        }
+    },
+    "sourceType": "script"
+}
